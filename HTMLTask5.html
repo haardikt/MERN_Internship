@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            position: relative;
+            
+        }
+
+        h2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .inline-labels label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .but{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2></h2>
+    <form>
+        <p>
+            <label>First Name: <input type="text" name="first_name" required></label>
+        </p>
+        <p>
+            <label>Last Name: <input type="text" name="last_name" required></label>
+        </p>
+        <p>
+            <label>Email: <input type="email" name="email" required></label>
+        </p>
+        <p>
+            <label>Password: <input type="password" name="password" required></label>
+        </p>
+        <p>
+            <label>Re-enter Password: <input type="password" name="confirm_password" required></label>
+        </p>
+        <p>
+            Gender:
+            <label><input type="radio" name="gender" value="Male">Male</label>
+            <label><input type="radio" name="gender" value="Female">Female</label>
+        </p>
+        <p>
+            <label>Age: <input type="number" name="age" required></label>
+        </p>
+        <p>
+            <label>Phone Number: <input type="tel" name="phone_number"></label>
+        </p>
+       
+        <p>
+            <label>Address: <textarea name="address" rows="4" cols="50"></textarea></label>
+        </p>
+        <p>
+            <label>State: <input type="text" name="state"></label>
+        </p>
+        <label>   
+            Country:  
+            </label>   
+            <select>  
+            <option value="Country">choose your country</option>    
+            </select>  
+       
+            <p>
+                Languages Known: 
+                <label class="inline-labels"><input type="checkbox" name="language" value="English">English</label>
+                <label class="inline-labels"><input type="checkbox" name="language" value="Kannada">Kannada</label>
+                <label class="inline-labels"><input type="checkbox" name="language" value="Hindi">Hindi</label>
+                <label class="inline-labels"><input type="checkbox" name="language" value="Telugu">Telugu</label>
+            </p>
+        <p>
+            <label>
+                <input type="checkbox" required>
+                I hereby declare all the given details are true
+            </label>
+        </p>
+        <p>
+            <h2><a href="https://www.ethnus.com/">Log in to ethnus Website</a></h2>
+        </p>
+        <div class="center-submit">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>
